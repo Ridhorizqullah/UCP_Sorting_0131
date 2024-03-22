@@ -26,16 +26,38 @@ using namespace std;
 int rd[31];
 int n;
 
+void input() {
+	while (true) {
+		cout << "memasukkan banyaknya elemen pada array : ";
+		cin >> n;
+		if (n <= 31)
+			break;
+		else {
+			cout << "\narray dapat mempunyai maksimal 20 elemen.\n";
+		}
+	}
+	cout << endl;
+	cout << "=====================" << endl;
+	cout << "masukan elemen array" << endl;
+	cout << "=====================" << endl;
+
+	for (int i = 0; i < n; i++) {
+		cout << "Data ke-" << (i + 1) << ";";
+		cin >> rd[i];
+	}
+}
+
+// proses sorting
 void selectionsort() {
 	int i, min_index, j;
 
-	for (i = 0; i < n - 1; i++) {
+	for (i = 0; i < n - 1; i++){
 		min_index = i;
 		for (j = i+1; j < n; j++)
-			if (arr[min_index], arr[i])
+			if (rdh[min_index], rdh[i])
 	}
 
-
+	swap([j ]
 
 
 
